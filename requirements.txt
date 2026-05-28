@@ -1,24 +1,22 @@
 # UI & Dashboard
 streamlit==1.35.0
 streamlit-aggrid==1.0.5
-plotly==5.22.0
 
 # AI Integration
 google-genai==0.3.0
-
-# Data Manipulation & Math
-pandas==2.2.2
-numpy==1.26.4
-
-# Traffic & Background Tasks
-celery==5.4.0
-redis==5.0.4
-
-# Exporters (Excel & PDF)
-XlsxWriter==3.2.0
-WeasyPrint==62.1
-Jinja2==3.1.4
-
-# Environment Variables & Utilities
-python-dotenv==1.0.1
 pydantic==2.7.2
+
+# Data Manipulation & Excel Export
+pandas==2.2.2
+XlsxWriter==3.2.0
+
+# PDF Generation & Charts
+xhtml2pdf==0.2.16
+Jinja2==3.1.4
+matplotlib==3.8.4
+
+# Database (Supabase Postgres)
+psycopg2-binary==2.9.9
+
+# Environment Utility
+python-dotenv==1.0.1
