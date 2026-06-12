@@ -37,7 +37,7 @@ def generate_best_pick(extracted_data_list: list) -> dict:
     
     try:
         response = client.models.generate_content(
-            model='gemini-2.5-pro',
+            model='gemini-3.5-flash',
             contents=[prompt],
             config=types.GenerateContentConfig(
                 response_mime_type="application/json",
