@@ -78,7 +78,7 @@ def extract_policy_data(quote_path: str, brochure_path: str = None) -> str:
     """)
 
     response = client.models.generate_content(
-        model='gemini-2.5-pro',
+        model='gemini-3.5-flash',
         contents=contents,
         config=types.GenerateContentConfig(
             response_mime_type="application/json", 
