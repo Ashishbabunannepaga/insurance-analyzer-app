@@ -43,7 +43,7 @@ def identify_document(pdf_file_path: str) -> dict:
         doc = types.Part.from_bytes(data=f.read(), mime_type='application/pdf')
     
     response = client.models.generate_content(
-        model='gemini-2.5-pro', 
+        model='gemini-3.5-flash', 
         contents=[doc, "Analyze this document. Identify the Insurance Company Name and the Plan Name. If it's a general company brochure, set plan_name to 'Master Brochure'."],
         config=types.GenerateContentConfig(
             response_mime_type="application/json", 
